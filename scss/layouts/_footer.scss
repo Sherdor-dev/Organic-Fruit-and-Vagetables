@@ -1,0 +1,197 @@
+// Footer styles
+footer{
+    width: 100%;
+    background-color: aliceblue;
+}
+.footer{
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    &__main{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & p{
+            width: 100%;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #555555;
+        }
+    }
+    &__ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        & li{
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 31px;
+            color: #222222;
+        }
+        &--li a{
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #555555;
+        }
+    }
+    &__contact{
+        display: none;
+        flex-direction: column;
+        gap: 28px;
+        // & h5{
+        //     font-family: 'DM Sans';
+        //     font-weight: 500;
+        //     font-size: 24px;
+        //     line-height: 31px;           
+        //     color: #222222;
+        // }
+        // & p{
+        //     font-family: 'DM Sans';
+        //     font-weight: 400;
+        //     font-size: 18px;
+        //     line-height: 23px;     
+        //     color: #222222;
+        // }
+        // &--icons{
+        //     display: flex;
+        //     gap: 14px;
+        //     & i{
+        //         font-size: 24px;
+        //         color: rgb(0, 155, 202);
+        //     }
+        //     #insta{
+        //         color: rgb(255, 95, 121);
+        //     }
+        // }
+    }
+}
+.top{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #09A66D;
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+}
+.nons{
+    display: none;
+}
+.blck{
+    display: block;
+}
+@media only screen and(max-width:992px){
+    .footer{
+        padding: 60px 15px;
+        &__main{
+            gap: 18px;
+            & p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        &__ul{
+            gap: 14px;
+            &--li{
+                font-size: 21px;
+                line-height: 25px;
+            }
+            &--li a{
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+        &__contact{
+            gap: 24px;
+            & h5{
+                font-size: 21px;
+                line-height: 25px;           
+            }
+            & p{
+                font-size: 16px;
+                line-height: 21px;     
+            }
+        }
+    }
+}
+@media only screen and(max-width:768px){
+    .footer{
+        &__main{
+            width: 20%;
+            & p{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and(max-width:576px){
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        &__main{
+            width: 20%;
+            & p{
+                display: none;
+            }
+        }
+        &__ul{
+            &--li{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            &--li a{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &__contact{
+            display: none;
+        }
+    }
+}
+@media only screen and(max-width:480px){
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        &__main{
+            width: 20%;
+            & p{
+                display: none;
+            }
+        }
+        &__ul{
+            &--li{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            &--li a{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &__contact{
+            display: none;
+        }
+    }
+    #order1{
+        order: 3;
+    }#order2{
+        order: 1;
+    }
+    #order3{
+        order: 2;
+    }
+}

@@ -1,0 +1,76 @@
+.modals{
+    backdrop-filter: blur(4px);
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(42, 42, 42, 0.303);
+    color: aliceblue;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__content{
+        position: relative;
+        border-radius: 5px;
+        padding: 20px 40px;
+        width: 350px;
+        height: 280px;
+        background-color: rgb(255, 255, 255);
+        & form{
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+        }
+        & h2{
+            text-align: center;
+            color: black;
+            font-family: 'Rosario';
+            font-weight: 700;
+        }
+    }
+    #modalInput{
+        padding: 0 15px;
+        width: 100%;
+        height: 40px;
+        outline: none;
+        font-size: 18px;
+        font-family: 'DM sans';
+        border: 1px solid grey;
+        border-radius: 8px;
+    }
+    #modalInput::placeholder{
+        font-size: 16px;
+        font-family: "DM Sans";
+    }
+    #modalBtn{
+        height: 40px;
+        width: 100%;
+        background-color: #09A66D;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        color: white;
+        border-radius: 8px;
+    }
+    #modalBtn:hover{
+        background-color: #ffffff;
+        color: #09A66D;
+        border: 2px solid #09A66D;
+    }
+    .exit{
+        display: block;
+        position: absolute;
+        color: #000000;
+        padding: 5px 8px;
+        top: 0%;
+        font-size:16px;
+        right: 0%;
+    }
+}
+
+#none{
+    display: none;
+}

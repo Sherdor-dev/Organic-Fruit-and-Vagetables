@@ -1,0 +1,189 @@
+.hero{
+    padding: 0 15px;
+    margin: 90px 0px;
+    background-color: #ffffff;
+
+    & h2{
+        font-family: 'Rosario';
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 90px;
+        color: #222222;
+    }
+    & p{
+        width: 55%;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #555555;
+    }
+    &__item{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--left{
+            width: 53%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            &-part{
+                width: 100%;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                & div p{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                & div h5{
+                    font-family: 'DM Sans';
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #222222;
+                }
+            }
+        }
+        &__right{
+            width: 40%;
+            & img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and(max-width:992px){
+    .hero{
+        & h2{
+            font-size: 65px;
+            line-height: 80px;
+        }
+        & p{
+            width: 65%;
+            font-size: 18px;
+
+        }
+        &__item{
+            margin-top: 50px;
+            &--left{
+                width: 50%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                &-part{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            &__right{
+                width: 50%;
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width:768px){
+    .hero{
+        & h2{
+            text-align: center;
+            font-size: 60px;
+            line-height: 70px;
+        }
+        & p{
+            text-align: center;
+            width: 95%;
+            font-size: 18px;
+        }
+        &__item{
+            margin-top: 60px;
+            flex-direction: column;
+            gap: 70px;
+            &--left{
+                width: 80%;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 40px;
+                &-part{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    gap: 50px;
+                    & p{
+                        text-align: start;
+                    }
+                }
+            }
+            &__right{
+                width: 50%;
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #left{
+        order: 2;
+    }
+    #right{
+        order: 1;
+    }
+}
+@media only screen and(max-width:576px){
+    .hero{
+        & h2{
+            text-align: center;
+            font-size: 48px;
+            line-height: 70px;
+        }
+        & p{
+            text-align: center;
+            width: 95%;
+            font-size: 16px;
+        }
+        &__item{
+            &__right{
+                width: 70%;
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width:480px){
+    .hero{
+        & h2{
+            text-align: center;
+            font-size: 42px;
+            line-height: 64px;
+        }
+        & p{
+            text-align: center;
+            width: 95%;
+            font-size: 16px;
+        }
+        &__item{
+            &--left{
+                &-part{
+                    & p{
+                        text-align: start;
+                    }
+                }
+            }
+            &__right{
+                width: 70%;
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

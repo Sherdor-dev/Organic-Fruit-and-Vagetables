@@ -1,0 +1,189 @@
+.contact{
+    padding: 0px 15px;
+    margin: 100px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__item{
+        width: 55%;
+        & small{
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+            color: #333333;
+        }
+        & h2{
+            font-family: 'Rosario';
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 70px;
+            color: #222222;
+        }
+        & p{
+            margin:25px 0px;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #555555;
+        }
+        &--dow{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            &-link{
+                justify-content: space-around;
+                background-color: #000;
+                border-radius: 10px;
+                width: 180px;
+                height: 55px;
+                display: flex;
+                align-items: center;
+                & h5{
+                    font-size: 17px;
+                    color: #FFFFFF;
+                    font-family: 'DM Sans';
+                }
+                & p{
+                    margin: 0;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                }
+                & i{
+                    font-size: 28px;
+                    color: #ffedea;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width:992px){
+    .contact{
+        &__item{
+            width: 60%;
+            & small{
+                font-size: 16px;
+            }
+            & h2{
+                font-size: 58px;
+                line-height: 60px;
+            }
+            & p{
+                font-size: 18px;
+                line-height: 25px;
+            }
+            &--dow{
+                &-link{
+                    width: 160px;
+                    height: 42px;
+                    & h5{
+                        font-size: 15px;
+                    }
+                    & p{
+                        margin: 0;
+                        font-size: 13px;
+                    }
+                    & i{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }  
+}
+@media only screen and(max-width:768px){
+    .contact{
+        flex-direction: column;
+        margin-top: 200px;
+        gap: 35px;
+        &__item{
+            width: 95%;
+            text-align: center;
+            & small{
+                display: none;
+            }
+            & h2{
+                font-size: 58px;
+                line-height: 60px;
+            }
+            & p{
+                font-size: 18px;
+                line-height: 25px;
+            }
+            &--dow{
+                justify-content: center;
+                &-link{
+                    width: 160px;
+                    height: 42px;
+                    & h5{
+                        font-size: 15px;
+                    }
+                    & p{
+                        margin: 0;
+                        font-size: 13px;
+                    }
+                    & i{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }  
+}
+@media only screen and(max-width:576px){
+    .contact{
+        &__item{
+            & h2{
+                font-size: 52px;
+                line-height: 58px;
+            }
+            & p{
+                font-size: 16px;
+                line-height: 28px;
+            }
+            &--dow{
+                justify-content: center;
+                &-link{
+                    width: 160px;
+                    height: 48px;
+                }
+            }
+        }
+    }  
+}
+@media only screen and(max-width:480px){
+    .contact{
+        &__item{
+            & h2{
+                font-size: 42px;
+                line-height: 52px;
+            }
+            & p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &--dow{
+                justify-content: center;
+                &-link{
+                    width: 160px;
+                    height: 48px;
+                }
+            }
+        }
+    }  
+}
+@media only screen and(max-width:480px){
+    .contact{
+        &__item{
+            &--dow{
+                flex-direction: column;
+                justify-content: center;
+                &-link{
+                    width: 160px;
+                    height: 48px;
+                }
+            }
+        }
+    }  
+}
